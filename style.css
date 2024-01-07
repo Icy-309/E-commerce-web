@@ -1,0 +1,321 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    overflow-x: hidden;
+}
+.header-nav{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+   
+
+}
+.header-1{
+   font-size: 40px;
+   display: inline;
+}
+.header-search-bar{
+  width: 500px;
+  height: 35px;
+  border-color:transparent;
+  border-radius: 20px;
+  background-color: #f1f1f1;
+  text-align: center;
+  
+}
+.header-search-container{
+    padding-top: 10px;
+}
+.header-2{
+    font-size: 30px;
+    font-weight: bolder;
+    padding-left: 20px;
+}
+.categories-font-container{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.arrow-button{
+    width: 100px;
+    height: 40px;
+    border-radius: 6px;
+    border-color: transparent;
+    cursor: pointer;
+}
+.content{
+    height: 250px;
+    padding: 3em;    
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid black;
+    }
+    
+    /* scrollable Div section  */
+    .scrollable_div{
+        display: grid;
+        grid-template-columns:auto auto auto auto auto auto auto ;
+        gap: 10px;
+        overflow-x: scroll;
+        padding: 40px 0;
+       
+      
+    }
+    
+    .scrollable_div::-webkit-scrollbar{
+        height: 10px;
+        padding: 20px;
+        
+        
+    }
+    
+    .scrollable_div::-webkit-scrollbar-track{
+      border-radius: 30px;
+      background-color: rgb(243, 88, 26);
+      
+          
+    }
+    
+    .scrollable_div::-webkit-scrollbar-thumb{
+        background-color: black;
+        border-radius: 30px;
+        width: 5rem;
+        
+    }
+      
+    
+    .scrollable_div::-webkit-scrollbar-button{
+        width: 20%;
+        margin-top: 20px;
+       
+    }
+    /* end of scrollable div */
+    
+    /* aside section  */
+    aside{
+      background-color:rgba(37, 141, 226, 0.301) ;
+    border-radius: 30px 30px 0px 0px ;   
+     }
+     .most-popular-h1{
+        margin-top: 50px;
+      margin-left: 50px;
+    }
+    .most-popular-container{
+        display: grid;
+        justify-content: center;
+        gap: 100px 90px;
+        grid-template-columns: auto auto ;
+        grid-template-rows:auto ;
+        margin-top: 50px ;
+       
+        
+    }
+    .grid-1{
+       height: 250px;
+       width: 300px;
+       border: 2px solid;
+      border-radius: 10px;
+       
+    }
+    .grid-2{
+        height: 250px;
+        width: 300px;
+        border-radius: 10px;
+        border: 2px solid;
+      
+       
+    }
+
+
+
+    .grid-3{
+        height: 250px;
+        width: 300px;
+        border: 2px solid  #000;
+        border-radius: 10px;
+      
+    }
+    .grid-4{
+
+        height: 250px;
+        width: 300px;
+        border-radius: 10px;
+        border: 2px solid  #000;
+       
+    }
+    .grid-5{
+
+        height: 250px;
+        width: 300px;
+        border-radius: 10px;
+        border: 2px solid  #000;
+       
+    }
+    .grid-6{
+
+        height: 250px;
+        width: 300px;
+        border-radius: 10px;
+        border: 2px solid  #000;
+       
+    }
+    .grid-7{
+
+        height: 250px;
+        width: 300px;
+        border-radius: 10px;
+        border: 2px solid  #000;
+       
+    }
+   
+    /* End of aside */
+  
+
+
+
+
+    @media screen and (max-width:767px){
+        .scrollable_div::-webkit-scrollbar{
+            height: 10px;
+            display: inline;         
+           
+        }
+        
+        .scrollable_div::-webkit-scrollbar-track{
+            background-color: rgb(243, 88, 26);
+            border-radius: 30px;
+            display: inline
+            
+           
+        }
+        
+        .scrollable_div::-webkit-scrollbar-thumb{
+            background-color: black;
+            border-radius: 30px;
+            width:80px;
+            display:inline;
+    
+        }
+          
+        
+        .scrollable_div::-webkit-scrollbar-button{
+            width: 20%;
+            display: inline;          
+           
+        }
+        .most-popular-h1{
+          text-align: center;
+        }
+        .most-popular-container{
+          
+            grid-template-columns: auto ;
+            gap: 50px;
+         
+        }
+        .grid-1{
+            height: 220px;
+            width: 300px;
+          
+         }
+         .grid-4{
+
+            height: 220px;
+            width: 300px;  
+          
+        }
+        .grid-3{
+
+            height: 220px;
+            width: 300px;  
+          
+           
+        }
+        .grid-2{
+
+            height: 220px;
+            width: 300px;   
+           
+        }
+        .sp1{
+          
+        }
+        .sp{
+           display: flex;
+
+        }
+        .inner-grid{
+            height: 20px;
+            width: 300px;
+          
+        }
+        .header-nav{
+         flex-wrap: wrap;
+           
+        
+        }
+
+
+        }
+        @media screen and (max-width:567px){
+            .header-search-bar{
+                width: 350px;
+                
+              }
+              .content{
+                height: 200px;
+                padding: 3em;    
+                width: 230px;
+             
+                }
+
+
+        }
+
+        @media screen and (max-width:414px){
+            .header-search-bar{
+                width: 250px;
+                
+              }
+            .content{
+                height: 170px;
+                padding: 3em;    
+                width: 200px;
+                }
+           
+            
+            .grid-1{
+                height: 200px;
+                width: 250px;
+              
+             }
+             .grid-4{
+    
+                height: 200px;
+                width: 250px; 
+            }
+            .grid-3{
+    
+                height: 200px;
+                width: 250px;
+               
+            }
+            .grid-2{
+    
+                height: 200px;
+                width: 250px;
+            }
+            .inner-grid{
+                height: 200px;
+                width: 250px;
+            }
+         
+        
+        }
+    
+    
